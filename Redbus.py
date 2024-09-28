@@ -5,9 +5,9 @@ import numpy as np
 
 # Load the dataset
 file_path = 'ABCD.csv'  # Update with the actual file path
-df = pd.read_csv(r"C:\Users\anees\Data Analysis\Python\Redbus\ABCD.csv")
+df = pd.read_csv(r"RedBus.csv")
 
-model = pickle.load(open(r"C:\Users\anees\Data Analysis\Python\Redbus\knn.pkl","rb"))
+model = pickle.load(open(r"knn.pkl","rb"))
 
 # Remove the unnamed column if necessary
 df = df.drop(columns=['Unnamed: 0'], errors='ignore')
