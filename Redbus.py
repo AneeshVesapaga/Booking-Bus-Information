@@ -4,9 +4,9 @@ import pickle
 import numpy as np
 
  
-df = pd.read_csv(r"C:\Users\anees\Data Analysis\Python\Redbus\FinalProjectML\final_bus.csv")
+df = pd.read_csv(r"final_bus.csv")
 
-model = pickle.load(open(r"C:\Users\anees\Data Analysis\Python\Redbus\knn.pkl","rb"))
+model = pickle.load(open(r"knn.pkl","rb"))
 
 df = df.drop(columns=['Unnamed: 0'], errors='ignore')
 
